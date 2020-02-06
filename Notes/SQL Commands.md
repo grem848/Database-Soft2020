@@ -1,6 +1,6 @@
 # Database
 ## SQL Commands
-![SQL Commands](https://i.stack.imgur.com/7uUaJ.png)
+![SQL Commands](https://raw.githubusercontent.com/grem848/Database-Soft2020/master/Notes/imgs/SQL-Commands.png)
 
 --- 
 
