@@ -1,0 +1,1 @@
+truncate "Guests", "Guest_bookings", "Booked_Rooms", "Bookings", "Rooms" restart identity;
