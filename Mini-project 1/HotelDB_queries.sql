@@ -37,14 +37,15 @@ WHERE room_number = 8
 AND starts >= timestamp '2020-03-21 17:00:00'
 AND ends <= timestamp '2020-03-22 23:00:00';
 
-/* GET MONTHS OF THE YEAR WHERE PEOPLE BOOK THE MOST */
+
+/* GET MONTHS OF THE YEAR WHERE PEOPLE BOOK THE MOST */ -- Andreas
 SELECT count(*) as number_of_bookings_in_month, 
 		date_part('Month', booking_created) as busiest_month
 FROM public."Bookings"
 GROUP BY busiest_month
 ORDER BY count(*) desc
 
-/* GET BUSIEST MONTHS OF THE YEAR */
+/* GET BUSIEST MONTHS OF THE YEAR */ -- Andreas
 SELECT count(*) as number_of_bookings_in_month, 
 		date_part('Month', starts) as busiest_month
 FROM public."Booked_Rooms"
@@ -52,7 +53,7 @@ GROUP BY busiest_month
 ORDER BY count(*) desc
 
 
-/* GET BUSIEST MONTH OF THE YEAR */
+/* GET BUSIEST MONTH OF THE YEAR */ -- Andreas
 SELECT count(*) as number_of_bookings_in_month
 FROM public."Booked_Rooms"
 WHERE (starts, ends) OVERLAPS
