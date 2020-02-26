@@ -5,3 +5,8 @@
 * Rasmus Jarnborg Friis
 * Mohammad Hariri
 * Andreas Guldborg Heick
+
+
+## ER Diagram 
+
+![ER-Diagram.png](ER-Diagram.png)
