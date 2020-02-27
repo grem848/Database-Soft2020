@@ -1,33 +1,39 @@
 /*  UPDATE ROOM PRICE FROM ROOM NUMBER */
 
-CREATE OR REPLACE FUNCTION updateRoomPriceFromRoomNumber (pricee integer, roomnumberr integer) 
-   RETURNS BOOLEAN LANGUAGE plpgsql AS $$
+CREATE OR REPLACE PROCEDURE updateroompricefromroomnumber(
+	pricee integer,
+	roomnumberr integer)
+LANGUAGE 'plpgsql'
+
+AS $$
 BEGIN  
 UPDATE public."Rooms"
 SET price=pricee
 WHERE number=roomnumberr;
 
-RETURN FOUND;
-END; $$ 
+RETURN;
+END; $$;
 
--- Run -> SELECT * FROM updateRoomPriceFromRoomNumber(6000, 3); */
-
+-- CALL updateroompricefromroomnumber(7000, 1);
 
 
 /* UPDATE ROOM PRICE FROM MAX_GUESTS */
 
-CREATE OR REPLACE FUNCTION updateRoomPriceFromMaxGuests (pricee integer, maxguests integer) 
-   RETURNS BOOLEAN LANGUAGE plpgsql AS $$
+CREATE OR REPLACE PROCEDURE updateroompricefrommaxguests(
+	pricee integer,
+	maxguests integer)
+    LANGUAGE 'plpgsql'
+    
+AS $$
 BEGIN  
 UPDATE public."Rooms"
 SET price=pricee
 WHERE max_guests=maxguests;
 
-RETURN FOUND;
-END; $$ 
+RETURN;
+END; $$;
 
--- Run ->  SELECT * FROM updateRoomPriceFromMaxGuests(1000, 1);
-
+-- CALL updateroompricefrommaxguests(2000, 2);
 
 
 /* GET LOYAL CLIENTS */
