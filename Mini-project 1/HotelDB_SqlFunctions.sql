@@ -1,7 +1,7 @@
 /*  UPDATE ROOM PRICE FROM ROOM NUMBER */
 
 CREATE OR REPLACE FUNCTION updateRoomPriceFromRoomNumber (pricee integer, roomnumberr integer) 
-   RETURNS BOOLEAN LANGUAGE plpgsql SECURITY DEFINER AS $$
+   RETURNS BOOLEAN LANGUAGE plpgsql AS $$
 BEGIN  
 UPDATE public."Rooms"
 SET price=pricee
@@ -17,7 +17,7 @@ END; $$
 /* UPDATE ROOM PRICE FROM MAX_GUESTS */
 
 CREATE OR REPLACE FUNCTION updateRoomPriceFromMaxGuests (pricee integer, maxguests integer) 
-   RETURNS BOOLEAN LANGUAGE plpgsql SECURITY DEFINER AS $$
+   RETURNS BOOLEAN LANGUAGE plpgsql AS $$
 BEGIN  
 UPDATE public."Rooms"
 SET price=pricee
