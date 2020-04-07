@@ -1,5 +1,7 @@
 # Big Data Analytics - Exercise Sheet MongoDB (5 points).
 
+## Team #IkkeForLangt
+
 #### Exercise:	Sharding	in	MongoDB	
 * What is sharding in mongoDB?
 
