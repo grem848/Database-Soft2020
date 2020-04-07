@@ -41,10 +41,10 @@ need to find top 10 “lang” (language) of the documents in reddit.
 
 ### c) Provide top 10 recorded out of the sorted result. (hint: use sort on the result returned by MapReduce)
 
-I might be a bit confused but I can't find any reddit data, and the assignment used twitter earlier?
-I don't see why we would use map reduce here, when aggregate does the job?
+We might be a bit confused but we can't find any reddit data, and the assignment used twitter earlier?
+We don't see why we would use map reduce here, when aggregate does the job?
 
-And since I couldn't find the reddit data, I used the tweets which do exist and have languages. Problem is that the twitter data only has 5 languages, so a top 10 makes no sense
+And since we couldn't find the reddit data, we used the tweets which do exist and have languages. Problem is that the twitter data only has 5 languages, so a top 10 makes no sense
 
 ```js
 db.tweet.aggregate([
@@ -79,7 +79,7 @@ you will get error.
 
 ### c) Provide top 10 recorded out of the sorted result. (hint: use sort on the result returned by MapReduce)
 
-Again I don't see why I should use mapreduce when aggregate is so much easier
+Again we don't see why we should use mapreduce when aggregate is so much easier
 
 ```js
 db.tweets.aggregate([
