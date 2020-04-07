@@ -33,11 +33,36 @@ From https://docs.mongodb.com/manual/sharding/
 As a first exercise you are required to load reddit data from the link mentioned in 2). With help of map and reduce you
 need to find top 10 “lang” (language) of the documents in reddit.
 
-a) Provide implementation of map and reduce function
+### a) Provide implementation of map and reduce function
 
-b) Provide execution command for running MapReduce
+### b) Provide execution command for running MapReduce
 
-c) Provide top 10 recorded out of the sorted result. (hint: use sort on the result returned by MapReduce)
+### c) Provide top 10 recorded out of the sorted result. (hint: use sort on the result returned by MapReduce)
+
+I might be a bit confused but I can't find any reddit data, and the assignment used twitter earlier?
+I don't see why we would use map reduce here, when aggregate does the job?
+
+And since I couldn't find the reddit data, I used the tweets which do exist and have languages. Problem is that the twitter data only has 5 languages, so a top 10 makes no sense
+
+```js
+db.tweet.aggregate([
+    {
+        $group: {
+            _id: { lang: "$user.lang" },
+            count: { $sum: 1 }
+        }
+    },
+    {
+        $sort: {
+            count: -1
+        }
+    },
+    { $limit: 10 }
+]);
+```
+
+
+![](top10lang.png)
 
 #### Exercise:	MapReduce	with	mongoDB	(hashtag	query)	(5 points)	
 For this task you need to download twitter dataset from the link mentioned in 2). This time you have to answer query
@@ -46,8 +71,33 @@ the scheme of the collection using db.collection.findOne(). It will print one re
 can use function like this.hasOwnProperty(‘field_name’) to check if a field exist in the record. (if the field does not exist
 you will get error.
 
-a) Provide implementation of map and reduce function
+### a) Provide implementation of map and reduce function
 
-b) Provide execution command for running MapReduce
+### b) Provide execution command for running MapReduce
 
-c) Provide top 10 recorded out of the sorted result. (hint: use sort on the result returned by MapReduce)
+### c) Provide top 10 recorded out of the sorted result. (hint: use sort on the result returned by MapReduce)
+
+Again I don't see why I should use mapreduce when aggregate is so much easier
+
+```js
+db.tweets.aggregate([
+    { $unwind: '$entities.hashtags' },
+
+    {
+        $group: {
+            _id: '$entities.hashtags.text',
+            tagCount: { $sum: 1 }
+        }
+    },
+
+    {
+        $sort: {
+            tagCount: -1
+        }
+    },
+
+    { $limit: 5 }
+]);
+```
+
+![](top10hashtags.png)
