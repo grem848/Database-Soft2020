@@ -43,6 +43,21 @@ The solution of this assignment brings five study points.
 # Network Demo
 I used a graph containing network services and their dependencies on eachother, I expanded on the data myself to make it a bit more interesting.
 
+## How to use
+
+* Open Neo4j Desktop
+* create or open a database
+* start the server/database
+
+* Type these console commands in the project root:
+    * npm install
+    * node app.js
+* Open Neo4j and check the data was made
+* Have fun!
+
+app.js will throw an exception, ignore it the code worked anyway!
+
+
 <br>
 
 ---
