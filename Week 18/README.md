@@ -131,3 +131,13 @@ YIELD nodeId, centrality
 RETURN gds.util.asNode(nodeId).name AS service, centrality
 ORDER BY centrality DESC
 ```
+
+<br>
+
+## Suggest implementation of the results in the business, related with your data.
+
+We can see which nodes are the most important, and we can therefor optimize the use or focus security or stability on these nodes. SAN etc. is widely used by other nodes, so the business should probably use some proper equipment there.
+
+From the similarty we can see that the API and Database VM might be bottlenecks, because they are different from all other nodes and because they are links between many nodes both ways.
+
+Using label propagation we can see that there are 2 unconnected networks, separated from eachother. Maybe this is an issue, if not then at least we know now.
