@@ -28,7 +28,10 @@ var statsQuery =
 
 var data =
     [["CRM", "Database VM"], ["Database VM", "Server 2"],
-        ["Server 2", "SAN"], ["Server 1", "SAN"], ["Webserver VM", "Server 1"],
+        ["Internal Server 1", "Internal Webserver VM"], ["Internal Webserver VM", "Internal Site"],
+        ["Server 2", "SAN"], ["Server 1", "SAN"], ["Webserver VM", "API"],
+        ["Server 3", "SAN"], ["Server 4", "SAN"], ["API", "Server 1"],
+        ["Server 5", "SAN"], ["Public Website 2", "Webserver VM"], ["API", "Server 2"],
         ["Public Website", "Webserver VM"], ["Public Website", "Webserver VM"]];
 
 function query(query, params, message, column) {
@@ -63,6 +66,7 @@ session
         query(dependencyQuery, {service_name: "Public Website"}, "Downstream services: ", "downstream_services");
         query(statsQuery, {}, "Dependents: ", "dependents");
     })
+    .then(setTimeout( () => driver.close(), 1000))
     .catch(function(error) {
         console.log(error);
     });

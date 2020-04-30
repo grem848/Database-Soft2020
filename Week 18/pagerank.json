@@ -1,0 +1,62 @@
+﻿[
+  {
+    "name": "SAN",
+    "score": 1.3450893633067609
+  },
+  {
+    "name": "Server 2",
+    "score": 0.5959312528371811
+  },
+  {
+    "name": "API",
+    "score": 0.494250001013279
+  },
+  {
+    "name": "Webserver VM",
+    "score": 0.40500001013278963
+  },
+  {
+    "name": "Internal Site",
+    "score": 0.3858750030398369
+  },
+  {
+    "name": "Server 1",
+    "score": 0.36005624979734424
+  },
+  {
+    "name": "Database VM",
+    "score": 0.27750000506639483
+  },
+  {
+    "name": "Internal Webserver VM",
+    "score": 0.27750000506639483
+  },
+  {
+    "name": "CRM",
+    "score": 0.15000000000000002
+  },
+  {
+    "name": "Internal Server 1",
+    "score": 0.15000000000000002
+  },
+  {
+    "name": "Public Website",
+    "score": 0.15000000000000002
+  },
+  {
+    "name": "Public Website 2",
+    "score": 0.15000000000000002
+  },
+  {
+    "name": "Server 3",
+    "score": 0.15000000000000002
+  },
+  {
+    "name": "Server 4",
+    "score": 0.15000000000000002
+  },
+  {
+    "name": "Server 5",
+    "score": 0.15000000000000002
+  }
+]

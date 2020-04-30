@@ -1,0 +1,62 @@
+﻿[
+  {
+    "service": "Internal Webserver VM",
+    "centrality": 1
+  },
+  {
+    "service": "Internal Site",
+    "centrality": 0.6666666666666666
+  },
+  {
+    "service": "Internal Server 1",
+    "centrality": 0.6666666666666666
+  },
+  {
+    "service": "Server 2",
+    "centrality": 0.5238095238095238
+  },
+  {
+    "service": "SAN",
+    "centrality": 0.4782608695652174
+  },
+  {
+    "service": "API",
+    "centrality": 0.4782608695652174
+  },
+  {
+    "service": "Server 1",
+    "centrality": 0.44
+  },
+  {
+    "service": "Database VM",
+    "centrality": 0.3793103448275862
+  },
+  {
+    "service": "Webserver VM",
+    "centrality": 0.3793103448275862
+  },
+  {
+    "service": "Server 3",
+    "centrality": 0.3333333333333333
+  },
+  {
+    "service": "Server 4",
+    "centrality": 0.3333333333333333
+  },
+  {
+    "service": "Server 5",
+    "centrality": 0.3333333333333333
+  },
+  {
+    "service": "CRM",
+    "centrality": 0.28205128205128205
+  },
+  {
+    "service": "Public Website 2",
+    "centrality": 0.28205128205128205
+  },
+  {
+    "service": "Public Website",
+    "centrality": 0.28205128205128205
+  }
+]

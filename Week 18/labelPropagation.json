@@ -1,0 +1,62 @@
+﻿[
+  {
+    "name": "API",
+    "communityId": 1
+  },
+  {
+    "name": "CRM",
+    "communityId": 1
+  },
+  {
+    "name": "Database VM",
+    "communityId": 1
+  },
+  {
+    "name": "Internal Server 1",
+    "communityId": 0
+  },
+  {
+    "name": "Internal Site",
+    "communityId": 0
+  },
+  {
+    "name": "Internal Webserver VM",
+    "communityId": 0
+  },
+  {
+    "name": "Public Website",
+    "communityId": 1
+  },
+  {
+    "name": "Public Website 2",
+    "communityId": 1
+  },
+  {
+    "name": "SAN",
+    "communityId": 1
+  },
+  {
+    "name": "Server 1",
+    "communityId": 1
+  },
+  {
+    "name": "Server 2",
+    "communityId": 1
+  },
+  {
+    "name": "Server 3",
+    "communityId": 1
+  },
+  {
+    "name": "Server 4",
+    "communityId": 1
+  },
+  {
+    "name": "Server 5",
+    "communityId": 1
+  },
+  {
+    "name": "Webserver VM",
+    "communityId": 1
+  }
+]

@@ -1,0 +1,122 @@
+﻿[
+  {
+    "service1": "Public Website",
+    "service2": "Public Website 2",
+    "similarity": 1
+  },
+  {
+    "service1": "Public Website 2",
+    "service2": "Public Website",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 1",
+    "service2": "Server 2",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 1",
+    "service2": "Server 3",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 1",
+    "service2": "Server 4",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 1",
+    "service2": "Server 5",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 2",
+    "service2": "Server 1",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 2",
+    "service2": "Server 3",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 2",
+    "service2": "Server 4",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 2",
+    "service2": "Server 5",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 3",
+    "service2": "Server 1",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 3",
+    "service2": "Server 2",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 3",
+    "service2": "Server 4",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 3",
+    "service2": "Server 5",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 4",
+    "service2": "Server 1",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 4",
+    "service2": "Server 2",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 4",
+    "service2": "Server 3",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 4",
+    "service2": "Server 5",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 5",
+    "service2": "Server 1",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 5",
+    "service2": "Server 2",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 5",
+    "service2": "Server 3",
+    "similarity": 1
+  },
+  {
+    "service1": "Server 5",
+    "service2": "Server 4",
+    "similarity": 1
+  },
+  {
+    "service1": "API",
+    "service2": "Database VM",
+    "similarity": 0.5
+  },
+  {
+    "service1": "Database VM",
+    "service2": "API",
+    "similarity": 0.5
+  }
+]
